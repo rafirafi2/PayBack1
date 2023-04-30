@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#0b409c"
+    >
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_width="360dp"
+        android:layout_height="80dp"
+        android:src="@drawable/logo"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"/>
+
+    <ImageView
+        android:id="@+id/profilePic"
+        android:layout_width="140dp"
+        android:layout_height="140dp"
+        android:src="@drawable/defualt"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:layout_below="@id/logo"/>
+
+    <LinearLayout
+        android:id="@+id/nameOfContact"
+        android:layout_width="400dp"
+        android:layout_height="40dp"
+        android:layout_below="@id/profilePic"
+        android:background="#ffce63"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:gravity="center"
+        android:orientation="vertical">
+
+
+        <TextView
+            android:id="@+id/name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Name"
+            android:textColor="#fff"
+            android:textSize="14sp"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/add_debt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Add Debt"
+        android:backgroundTint="#ffce63"
+        android:textColor="#fff"
+        android:textAllCaps="false"
+        android:layout_below="@id/nameOfContact"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="40dp"/>
+
+    <Button
+        android:id="@+id/add_credit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Add Credit"
+        android:backgroundTint="#ffce63"
+        android:textColor="#fff"
+        android:textAllCaps="false"
+        android:layout_below="@id/add_debt"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="40dp"/>
+
+    <Button
+        android:id="@+id/reset"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Reset"
+        android:backgroundTint="#ffce63"
+        android:textColor="#fff"
+        android:textAllCaps="false"
+        android:layout_below="@id/add_credit"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="40dp"/>
+
+
+    <LinearLayout
+        android:id="@+id/debt"
+        android:layout_width="300dp"
+        android:layout_height="40dp"
+        android:layout_below="@id/reset"
+        android:background="#ffce63"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:gravity="center"
+        android:orientation="vertical">
+
+
+        <TextView
+            android:id="@+id/getDebt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="I owe you: "
+            android:textColor="#AA10CD"
+            android:textSize="14sp"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/credit"
+        android:layout_width="300dp"
+        android:layout_height="40dp"
+        android:layout_below="@id/debt"
+        android:background="#ffce63"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/getCredit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Contact owes me : "
+            android:textColor="#AA10CD"
+            android:textSize="14sp"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/total"
+        android:layout_width="300dp"
+        android:layout_height="40dp"
+        android:layout_below="@id/credit"
+        android:background="#ffce63"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/totalDiff"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Total: "
+            android:textColor="#AA10CD"
+            android:textSize="14sp"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+
+    <Button
+        android:id="@+id/backToContacts"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Back to Contacts"
+        android:backgroundTint="#ffce63"
+        android:textColor="#fff"
+        android:textAllCaps="false"
+        android:layout_below="@id/total"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="40dp"/>
+
+
+
+
+
+</RelativeLayout>
